@@ -1,0 +1,345 @@
+
+ **1. What is cybersecurity and why is it important?**
+
+Cybersecurity is the practice of protecting systems, networks, and data from cyber attacks. It’s important to maintain **confidentiality, integrity, and availability** of digital assets and to prevent financial loss, data breaches, and reputational damage.
+
+---
+
+### **2. Difference between threat, vulnerability, and risk**
+
+* **Threat:** A potential danger (e.g., malware, hacker).
+* **Vulnerability:** A weakness in a system (e.g., unpatched software).
+* **Risk:** The likelihood that a threat exploits a vulnerability, causing harm.
+
+---
+
+### **3. CIA Triad**
+
+* **Confidentiality:** Ensuring only authorized access to data.
+* **Integrity:** Protecting data from unauthorized modifications.
+* **Availability:** Ensuring data and services are accessible when needed.
+
+---
+
+### **4. IDS vs IPS**
+
+* **IDS (Intrusion Detection System):** Detects attacks and alerts.
+* **IPS (Intrusion Prevention System):** Detects and actively blocks attacks.
+
+---
+
+### **5. Symmetric vs Asymmetric Encryption**
+
+* **Symmetric:** Same key for encryption/decryption. Faster but requires secure key exchange.
+* **Asymmetric:** Public key encrypts, private key decrypts. Slower but more secure for key distribution.
+
+---
+
+### **6. Principle of Least Privilege**
+
+Users or programs should have **only the minimum permissions** required to perform tasks, reducing risk of misuse.
+
+---
+
+### **7. Hashing vs Encryption**
+
+* **Hashing:** One-way process, used for data integrity.
+* **Encryption:** Two-way process, used for confidentiality.
+
+---
+
+### **8. Two-Factor Authentication (2FA)**
+
+Adds a second verification step (e.g., password + OTP). Even if one factor is compromised, attacker cannot access the account.
+
+---
+
+### **9. Black Hat, White Hat, Grey Hat Hackers**
+
+* **Black Hat:** Malicious, illegal hacking.
+* **White Hat:** Ethical hacking for defense.
+* **Grey Hat:** Hacks without permission but not strictly malicious.
+
+---
+
+### **10. Common Cyber Attack Vectors**
+
+Phishing, malware, ransomware, SQL injection, XSS, DDoS, brute force attacks, social engineering.
+
+---
+
+### **11. Firewall**
+
+Filters incoming/outgoing traffic based on security rules. Can be hardware, software, or both.
+
+---
+
+### **12. DMZ in Network Security**
+
+A **Demilitarized Zone** isolates public-facing servers from internal networks, reducing attack surface.
+
+---
+
+### **13. Types of Firewalls**
+
+* Packet-filtering
+* Stateful inspection
+* Proxy firewall
+* Next-generation firewall (NGFW)
+
+---
+
+### **14. Port Scanning**
+
+Detects open ports and services on a system; attackers use it to find vulnerabilities.
+
+---
+
+### **15. ARP Poisoning**
+
+Attack that sends fake ARP messages to associate attacker’s MAC with victim’s IP. Prevented by **static ARP entries, encryption, and IDS**.
+
+---
+
+### **16. TCP vs UDP**
+
+* **TCP:** Connection-oriented, reliable.
+* **UDP:** Connectionless, faster but unreliable. Security context: TCP is easier to monitor; UDP can be abused for attacks (e.g., amplification).
+
+---
+
+### **17. VPN**
+
+Encrypts internet traffic and hides IP addresses, ensuring **secure and private communication** over public networks.
+
+---
+
+### **18. MAC Flooding**
+
+Overloads a switch with fake MAC addresses, forcing it to act as a hub. Prevented using **port security**.
+
+---
+
+### **19. Securing a Wi-Fi Network**
+
+* Use strong WPA3 encryption
+* Change default SSID/password
+* Disable WPS
+* Enable MAC filtering
+
+---
+
+### **20. Roles of SSL/TLS**
+
+Encrypts data in transit, ensures **confidentiality and integrity**, and authenticates server identity.
+
+---
+
+### **21. OS Hardening**
+
+Reducing vulnerabilities in an OS:
+
+* Remove unused services
+* Patch regularly
+* Configure firewalls
+* Limit user privileges
+
+---
+
+### **22. Rootkit**
+
+Malware that hides its presence while giving attacker privileged access.
+
+---
+
+### **23. Patch Management**
+
+Updating software to fix vulnerabilities. Important to prevent exploitation.
+
+---
+
+### **24. Securing a Linux Server**
+
+* Apply updates
+* Disable root login
+* Configure firewall
+* Use SELinux/AppArmor
+* Enable logging and monitoring
+
+---
+
+### **25. Privilege Escalation**
+
+When attackers gain higher access than intended. Prevent with **least privilege, patching, and monitoring**.
+
+---
+
+### **26. Tools for Monitoring Logs**
+
+* Splunk
+* ELK Stack (Elasticsearch, Logstash, Kibana)
+* OSSEC
+* Graylog
+
+---
+
+### **27. Windows Security Event Log**
+
+Monitors security events like login attempts, account creation, system changes. Key events: 4624 (login), 4625 (failed login), 4672 (privileged access).
+
+---
+
+### **28. Secure Coding Practices**
+
+* Input validation
+* Output encoding
+* Principle of least privilege
+* Parameterized queries
+* Avoid hardcoded credentials
+
+---
+
+### **29. Sandboxing**
+
+Running applications in isolated environments to prevent system-wide damage.
+
+---
+
+### **30. Protecting Against SQL Injection**
+
+* Use parameterized queries/prepared statements
+* Input validation
+* ORM frameworks
+
+---
+
+### **31. Zero-Day Vulnerability**
+
+A flaw unknown to the vendor, with no patch available.
+
+---
+
+### **32. Ransomware**
+
+Malware that encrypts files for ransom. Prevent by **backups, patching, endpoint security, and user training**.
+
+---
+
+### **33. Man-in-the-Middle (MITM) Attack**
+
+Attacker intercepts communication between two parties. Mitigation: **SSL/TLS, VPN, certificate validation**.
+
+---
+
+### **34. Cross-Site Scripting (XSS)**
+
+Injecting malicious scripts into websites. Prevent with **input validation and output encoding**.
+
+---
+
+### **35. Buffer Overflow Attack**
+
+Overwrites memory beyond buffer limits to execute malicious code. Mitigate with **bounds checking, ASLR, DEP**.
+
+---
+
+### **36. DDoS Attacks**
+
+Distributed Denial of Service floods servers with traffic. Mitigation: **CDNs, rate limiting, firewalls**.
+
+---
+
+### **37. Phishing**
+
+Deceptive emails/websites to steal credentials. Defend using **user awareness, email filters, MFA**.
+
+---
+
+### **38. Session Hijacking**
+
+Attacker steals session tokens to impersonate users. Mitigation: **HTTPS, secure cookies, token expiration**.
+
+---
+
+### **39. Botnet**
+
+Network of compromised devices controlled by attacker.
+
+---
+
+### **40. Indicators of Compromise (IoCs)**
+
+Unusual network traffic, unknown processes, unexpected changes, alerts from security tools.
+
+---
+
+### **41. Top OWASP Vulnerabilities**
+
+* Injection
+* Broken Authentication
+* Sensitive Data Exposure
+* XSS
+* Security Misconfiguration
+* Insecure Deserialization
+* Broken Access Control
+
+---
+
+### **42. Penetration Testing vs Vulnerability Scanning**
+
+* **Penetration Testing:** Simulated attack to exploit vulnerabilities.
+* **Vulnerability Scanning:** Automated detection of known vulnerabilities.
+
+---
+
+### **43. Tools for Penetration Testing**
+
+* Metasploit
+* Nmap
+* Burp Suite
+* Wireshark
+* Nessus
+
+---
+
+### **44. Wireshark**
+
+Network protocol analyzer for capturing and analyzing traffic for security issues.
+
+---
+
+### **45. Metasploit**
+
+Framework for developing and executing exploits to test system security.
+
+---
+
+### **46. Nmap**
+
+Network scanner used to discover hosts, open ports, and services.
+
+---
+
+### **47. Static vs Dynamic Code Analysis**
+
+* **Static:** Examines code without executing (e.g., linters).
+* **Dynamic:** Analyzes running application for vulnerabilities.
+
+---
+
+### **48. SIEM (Security Information and Event Management)**
+
+Centralizes logging, analyzes security events, alerts on suspicious activity.
+
+---
+
+### **49. Threat Hunting**
+
+Proactively searching for threats or anomalies in network/system before alerts trigger.
+
+---
+
+### **50. Purpose of Incident Response Plan**
+
+To **identify, contain, eradicate, and recover** from security incidents efficiently, minimizing damage and downtime.
+
